@@ -158,7 +158,7 @@ checkout.addEventListener('click', () => {
     const isOpen = restaurantIsOpen()
     if (!isOpen) {
         Toastify({
-            text: "DESCULPE, O RESTAURANTE FECHADO NO MOMENTO.",
+            text: "Desculpe, o restaurante está fechado no momento",
             duration: 3000,
             close: true,
             gravity: "top", // `top` or `bottom`
