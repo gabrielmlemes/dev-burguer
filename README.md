@@ -26,8 +26,4 @@ Essa aplicação não exige nenhum tipo de configuração prévia para poder us�
 
 (Link para pegar as badges: https://github.com/Ileriayo/markdown-badges)
 
-## 📄 Licença
-
-Esse projeto está sob a licença MIT license - acesse os detalhes [LICENSE.md](https://github.com/gabrielmlemes/LandingPageBarberShop/blob/master/LICENSE)).
-
 * Link para o meu linkedin ([Linkedin](https://www.linkedin.com/in/gabriel-l-775abb103/))
