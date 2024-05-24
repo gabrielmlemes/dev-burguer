@@ -61,9 +61,9 @@ container.addEventListener('click', (e) => {
             text: "Item adicionado ao carrinho",
             duration: 3000,
             close: true,
-            gravity: "top", // `top` or `bottom`
-            position: "right", // `left`, `center` or `right`
-            stopOnFocus: true, // Prevents dismissing of toast on hover
+            gravity: "top", 
+            position: "right", 
+            stopOnFocus: true,
             style: {
                 background: "green",
             },
@@ -154,22 +154,28 @@ addressInput.addEventListener("input", (e) => {
 
 checkout.addEventListener('click', () => {
 
-    // Verificar o horário
-    const isOpen = restaurantIsOpen()
-    if (!isOpen) {
-        Toastify({
-            text: "Desculpe, o restaurante está fechado no momento",
-            duration: 3000,
-            close: true,
-            gravity: "top", // `top` or `bottom`
-            position: "right", // `left`, `center` or `right`
-            stopOnFocus: true, // Prevents dismissing of toast on hover
-            style: {
-                background: "#ef4444",
-            },
-        }).showToast();
-        return; // Adicionando a chave de fechamento aqui
-    }
+    /* 
+    Esta parte do código foi comentada para uma melhor interação ao finalizar o pedido, pois
+    com a verificação ativada, o usuário só consegue finalizar o pedido dentro do horário de
+    funcionamento do restaurante (18h às 22h).
+    */
+
+    
+    // const isOpen = restaurantIsOpen()
+    // if (!isOpen) {
+    //     Toastify({
+    //         text: "Desculpe, o restaurante está fechado no momento",
+    //         duration: 3000,
+    //         close: true,
+    //         gravity: "top", // `top` or `bottom`
+    //         position: "right", // `left`, `center` or `right`
+    //         stopOnFocus: true, // Prevents dismissing of toast on hover
+    //         style: {
+    //             background: "#ef4444",
+    //         },
+    //     }).showToast();
+    //     return; // Adicionando a chave de fechamento aqui
+    // }
 
     if (cart.length === 0) return
 
